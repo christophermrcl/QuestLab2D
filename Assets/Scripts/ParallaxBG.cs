@@ -6,7 +6,7 @@ public class ParallaxBG : MonoBehaviour
 {
     public Parallax parallaxScript;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         parallaxScript = this.gameObject.transform.parent.GetComponent<Parallax>();
     }

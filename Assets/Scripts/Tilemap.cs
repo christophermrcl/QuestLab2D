@@ -6,9 +6,10 @@ public class Tilemap : MonoBehaviour
 {
     public TilemapGenerate tilemapGenerateScript;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         tilemapGenerateScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TilemapGenerate>();
+
     }
 
     // Update is called once per frame

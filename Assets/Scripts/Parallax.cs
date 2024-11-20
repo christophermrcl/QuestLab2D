@@ -47,7 +47,11 @@ public class Parallax : MonoBehaviour
 
     public void PlayerStepped()
     {
-        Destroy(prev2.gameObject);
+        if (prev2)
+        {
+            Destroy(prev2.gameObject);
+        }
+        
         prev2 = prev;
         prev = current;
         current = next;
